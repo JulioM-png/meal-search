@@ -1,7 +1,15 @@
+<script setup lang="ts">
+import HomePage from '@/views/HomePage.vue';
+
+</script>
+
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/other">Other</RouterLink>
+    <RouterLink :to="{name: 'Home'}">Home</RouterLink>
+    <RouterLink :to="{name: 'MealsByName'}">MealsByName</RouterLink>
+    <RouterLink :to="{name: 'MealsByLetter'}">MealsByLetter</RouterLink>
+    <RouterLink :to="{name: 'MealsByIngredients'}">MealsByIngredients</RouterLink>
+
   </nav>
 </template>
 
